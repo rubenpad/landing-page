@@ -1,0 +1,30 @@
+$Font: 'Arial';
+$primary-color: #da3473;
+$secondary-color: gray;
+$light-color: #fff;
+$dark-color: #3b3b3b;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+
+body {
+  font-family: $Font;
+}

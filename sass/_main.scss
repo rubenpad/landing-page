@@ -1,0 +1,65 @@
+.main {
+  max-width: 100%;
+  padding: 20px;
+
+  &-content {
+    position: relative;
+
+    @include media(tablet) {
+      @include display-grid;
+      @include grid-template-columns(repeat(2, 1fr));
+    }
+
+    &-left {
+      position: absolute;
+      padding: 20px;
+
+      @include media(tablet) {
+        @include grid-column(1, 2);
+        align-self: center;
+        position: relative;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        color: $secondary-color;
+        font-size: 50px;
+        font-weight: normal;
+
+        span {
+          color: $dark-color;
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        white-space: wrap;
+      }
+
+      .button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: $primary-color;
+        color: $light-color;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      padding: 20px;
+
+      @include media(tablet) {
+        @include grid-column(2, 3);
+        align-items: center;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

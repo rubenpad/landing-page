@@ -13,28 +13,34 @@
     &-left {
       position: absolute;
       padding: 20px;
+      z-index: 10;
 
       @include media(tablet) {
         @include grid-column(1, 2);
         align-self: center;
-        position: relative;
       }
 
       h1 {
         margin-bottom: 20px;
         color: $secondary-color;
         font-size: 50px;
-        font-weight: normal;
+        font-weight: 400;
 
         span {
           color: $dark-color;
-          font-weight: bold;
+          font-weight: 900;
         }
       }
 
       h2 {
         margin-bottom: 20px;
         white-space: wrap;
+        color: $secondary-color;
+        font-weight: bold;
+
+        span {
+          color: $primary-color;
+        }
       }
 
       .button {
@@ -59,6 +65,13 @@
 
       img {
         width: 100%;
+        opacity: 0.7;
+        margin-top: 10px;
+
+        @include media(tablet) {
+          opacity: 1;
+          margin: 0;
+        }
       }
     }
   }

@@ -5,28 +5,32 @@
   @include grid-template-columns(repeat(2, 1fr));
 
   max-width: 100%;
+  height: 80px;
   padding: 20px;
 
   .navbar {
     @include grid-column(1, 2);
-    border-bottom: 2px solid color.scale($primary-color, $lightness: 50%);
+    border-bottom: 1px solid color.scale($primary-color, $lightness: 60%);
 
     ul {
       height: 100%;
-    }
 
-    li {
-      display: inline-block;
-      height: 100%;
-      margin: 0 5px;
-      text-align: center;
+      li {
+        display: inline-block;
+        height: 100%;
+        margin: 0 5px;
+        text-align: center;
 
-      &:hover {
-        border-bottom: 3px solid $primary-color;
-      }
+        &:hover {
+          border-bottom: 4px solid $primary-color;
+          a {
+            color: $primary-color;
+          }
+        }
 
-      @include media(tablet) {
-        width: 80px;
+        @include media(tablet) {
+          width: 80px;
+        }
       }
     }
   }
@@ -34,7 +38,6 @@
   .user-profile {
     @include grid-column(2, 3);
     justify-self: end;
-    margin-bottom: 10px;
     color: $secondary-color;
     cursor: pointer;
 

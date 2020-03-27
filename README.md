@@ -4,5 +4,5 @@
 
 Demo: [Hello world - Landing Page]('https://rubbenpad.github.io/landing-page)
 
-<img src="./assets/desktop.png" styles="width: 500px;" />
-<img src="./assets/responsive.png" styles="width: 300px;" />
+<img src="./assets/desktop.png" width="500px" height="300px"/>
+<img src="./assets/responsive.png" width="300px" height="600px"/>
